@@ -37,9 +37,7 @@
 
 ## Usage
 ```javascript
-import RNPollfish from 'react-native-pollfish';
+import Pollfish from 'react-native-pollfish';
 
-// TODO: What do with the module?
-RNPollfish;
+Pollfish.initialize("your api key", true, true)
 ```
-  

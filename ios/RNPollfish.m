@@ -15,7 +15,7 @@ RCT_EXPORT_MODULE()
 
 #pragma mark exported methods
 
-// Request the video before we need to display it
+// Initialize Pollfish
 RCT_EXPORT_METHOD(initialize :(NSString *)apiKey :(BOOL *)debugMode  :(BOOL *)autoMode)
 {
     NSLog(@"initialize Pollfish");
@@ -30,5 +30,6 @@ RCT_EXPORT_METHOD(initialize :(NSString *)apiKey :(BOOL *)debugMode  :(BOOL *)au
 
 #pragma mark delgate events
 
+// WIP
 
 @end
