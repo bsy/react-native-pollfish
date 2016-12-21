@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/jquerymin.js",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/jquerymin.js"
+    },
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/circlesmin.js",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/circlesmin.js"
+    },
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/jquerymobile.js",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/jquerymobile.js"
+    },
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/keep.xml",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/keep.xml"
+    },
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/poll_resources",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/poll_resources"
+    },
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/jquery_nicescroll.js",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/jquery_nicescroll.js"
+    },
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/jquerymobilec.css",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/jquerymobilec.css"
+    },
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/underscoremin.js",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/underscoremin.js"
+    },
+    {
+        "merged": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/res/merged/debug/raw/fastclick.js",
+        "source": "/Users/ben/Code/reactnative/react-native-pollfish/android/build/intermediates/exploded-aar/com.pollfish/pollfish/4.3.1/googleplayRelease/res/raw/fastclick.js"
+    }
+]
