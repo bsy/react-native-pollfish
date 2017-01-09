@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNPollfish.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNPollfish.m */; };
-		B572E0861E035C2E005AEA0E /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B572E0851E035C2E005AEA0E /* pollfish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +26,6 @@
 		134814201AA4EA6300B7C361 /* libRNPollfish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPollfish.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNPollfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPollfish.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNPollfish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPollfish.m; sourceTree = "<group>"; };
-		B572E0851E035C2E005AEA0E /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pollfish.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B572E0861E035C2E005AEA0E /* pollfish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +50,6 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B572E0851E035C2E005AEA0E /* pollfish.framework */,
 				B3E7B5881CC2AC0600A0062D /* RNPollfish.h */,
 				B3E7B5891CC2AC0600A0062D /* RNPollfish.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -210,6 +206,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"~/Documents/PollfishSDK/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -230,6 +227,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"~/Documents/PollfishSDK/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
