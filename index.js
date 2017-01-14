@@ -1,6 +1,2 @@
-
-import { NativeModules } from 'react-native';
-
-const Pollfish = NativeModules['RNPollfish'];
-
+import Pollfish from './Pollfish'
 export default Pollfish;
