@@ -60,7 +60,7 @@ public class RNPollfishModule extends ReactContextBaseJavaModule {
 
             PollFish.initWith( getCurrentActivity(),
                 new ParamsBuilder(apiKey)
-                    .releaseMode(debugMode) // Set to false for production
+                    .releaseMode(!debugMode) // Due to inconsitency with iOS, we negate whatever is passed in for production
                     .customMode(autoMode) // Set true to avoid auto-popup behavior
                     .requestUUID(uuid) // Unique user identifier, passed back in the callback
                     .pollfishSurveyReceivedListener(new PollfishSurveyReceivedListener() {
