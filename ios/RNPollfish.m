@@ -17,7 +17,7 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(initialize :(NSString *)apiKey :(BOOL *)debugMode  :(BOOL *)customMode :(NSString *)userId)
 {
     NSLog(@"initialize Pollfish");
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishNotAvailable) name:@"PollfishSurveyNotAvailable" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(surveyNotAvailable) name:@"PollfishSurveyNotAvailable" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishOpened) name:@"PollfishOpened" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishClosed) name:@"PollfishClosed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishUsernotEligible) name:@"PollfishUserNotEligible" object:nil];
@@ -29,7 +29,7 @@ RCT_EXPORT_METHOD(initialize :(NSString *)apiKey :(BOOL *)debugMode  :(BOOL *)cu
              andDeveloperKey: apiKey
                andDebuggable: debugMode
                andCustomMode: customMode
-              andRequestUUID: userId];  
+              andRequestUUID: userId];
 }
 
 RCT_EXPORT_METHOD(show)
