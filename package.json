@@ -14,5 +14,10 @@
   "license": "",
   "peerDependencies": {
     "react-native": ">=0.29.0"
+  },
+  "rnpm": {
+    "ios": {
+      "sourceDir": "./ios"
+    }
   }
 }
