@@ -41,3 +41,5 @@ import Pollfish from 'react-native-pollfish';
 
 Pollfish.initialize("your api key", true, true)
 ```
+
+More docs coming soon!
