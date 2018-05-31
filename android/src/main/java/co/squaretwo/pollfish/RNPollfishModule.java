@@ -106,7 +106,9 @@ public class RNPollfishModule extends ReactContextBaseJavaModule {
                         }
                     })
                     .build());
-
+            if (autoMode) {
+                PollFish.hide();
+            }
           }
         });
 

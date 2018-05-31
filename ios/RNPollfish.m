@@ -30,6 +30,9 @@ RCT_EXPORT_METHOD(initialize :(NSString *)apiKey :(BOOL *)debugMode  :(BOOL *)cu
                andDebuggable: debugMode
                andCustomMode: customMode
               andRequestUUID: userId];
+    if (customMode) {
+        [Pollfish hide];
+    }
 }
 
 RCT_EXPORT_METHOD(show)
