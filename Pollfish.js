@@ -1,9 +1,7 @@
-import {
-  NativeModules,
-  DeviceEventEmitter,
-} from 'react-native';
+import { NativeModules, NativeEventEmitter } from 'react-native';
 
-const Pollfish = NativeModules.RNPollfish;
+const RNPollfish = NativeModules.RNPollfish;
+const PollfishEventEmitter = new NativeEventEmitter(RNPollfish);
 
 const eventHandlers = {
   surveyReceived: new Map(),
@@ -22,7 +20,7 @@ const addEventListener = (type, handler) => {
     case 'surveyNotAvailable':
     case 'surveyOpened':
     case 'surveyClosed':
-      eventHandlers[type].set(handler, DeviceEventEmitter.addListener(type, handler));
+      eventHandlers[type].set(handler, PollfishEventEmitter.addListener(type, handler));
       break;
     default:
       console.log(`Event with type ${type} does not exist.`);
@@ -38,21 +36,21 @@ const removeEventListener = (type, handler) => {
 }
 
 const removeAllListeners = () => {
-  DeviceEventEmitter.removeAllListeners('surveyReceived');
-  DeviceEventEmitter.removeAllListeners('surveyCompleted');
-  DeviceEventEmitter.removeAllListeners('userNotEligible');
-  DeviceEventEmitter.removeAllListeners('surveyNotAvailable');
-  DeviceEventEmitter.removeAllListeners('surveyOpened');
-  DeviceEventEmitter.removeAllListeners('surveyClosed');
+  PollfishEventEmitter.removeAllListeners('surveyReceived');
+  PollfishEventEmitter.removeAllListeners('surveyCompleted');
+  PollfishEventEmitter.removeAllListeners('userNotEligible');
+  PollfishEventEmitter.removeAllListeners('surveyNotAvailable');
+  PollfishEventEmitter.removeAllListeners('surveyOpened');
+  PollfishEventEmitter.removeAllListeners('surveyClosed');
 };
 
 module.exports = {
-  ...Pollfish,
-  initialize: (key,  releaseMode, customMode, userId) => Pollfish.initialize(key, releaseMode, customMode, userId),
-  show: () => Pollfish.show(),
-  hide: () => Pollfish.hide(),
-  destroy: () => Pollfish.destroy(),
-  surveyAvailable: () => Pollfish.surveyAvailable(),
+  ...RNPollfish,
+  initialize: (key,  releaseMode, customMode, userId) => RNPollfish.initialize(key, releaseMode, customMode, userId),
+  show: () => RNPollfish.show(),
+  hide: () => RNPollfish.hide(),
+  destroy: () => RNPollfish.destroy(),
+  surveyAvailable: () => RNPollfish.surveyAvailable(),
   addEventListener,
   removeEventListener,
   removeAllListeners

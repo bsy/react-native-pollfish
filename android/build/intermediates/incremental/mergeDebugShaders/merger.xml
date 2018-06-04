@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/ben/Code/reactnative/react-native-pollfish/android/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/ben/Code/reactnative/react-native-pollfish/android/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/raymond/workspace/verydice/node_modules/react-native-pollfish/android/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/raymond/workspace/verydice/node_modules/react-native-pollfish/android/src/debug/shaders"/></dataSet></merger>
