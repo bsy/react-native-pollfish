@@ -206,7 +206,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"~/Documents/PollfishSDK/**",
+					"$(PROJECT_DIR)/../../../ios/PollfishSDK/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -227,7 +227,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"~/Documents/PollfishSDK/**",
+					"$(PROJECT_DIR)/../../../ios/PollfishSDK/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
