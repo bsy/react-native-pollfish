@@ -9,6 +9,7 @@ NSString *const kPollfishSurveyOpened = @"surveyOpened";
 NSString *const kPollfishSurveyClosed = @"surveyClosed";
 
 bool isInitialized;
+bool isInitializing;
 
 @implementation RNPollfish
 
@@ -53,8 +54,11 @@ RCT_EXPORT_METHOD(initialize :(NSString *)apiKey :(BOOL *)debugMode  :(BOOL *)cu
                andDebuggable: debugMode
                andCustomMode: customMode
               andRequestUUID: userId];
+    
     if (customMode) {
+        isInitializing = YES;
         [Pollfish hide];
+        isInitializing = NO;
     }
 }
 
@@ -130,6 +134,11 @@ RCT_EXPORT_METHOD(surveyAvailable)
 - (void)pollfishClosed
 {
     NSLog(@"Pollfish is closed!");
-    [self sendEventWithName:kPollfishSurveyClosed body:nil];
+    
+    NSDictionary *body = @{
+        @"wasClosedByInitialize": [NSNumber numberWithBool:isInitializing]
+    };
+
+    [self sendEventWithName:kPollfishSurveyClosed body:body];
 }
 @end
