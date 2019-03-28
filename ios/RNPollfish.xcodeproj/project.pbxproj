@@ -207,6 +207,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"~/Documents/PollfishSDK/**",
+					"$(PROJECT_DIR)/../../../ios/Pods/Pollfish",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -228,6 +229,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"~/Documents/PollfishSDK/**",
+					"$(PROJECT_DIR)/../../../ios/Pods/Pollfish",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

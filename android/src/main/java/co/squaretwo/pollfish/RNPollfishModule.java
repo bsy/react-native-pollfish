@@ -37,6 +37,8 @@ public class RNPollfishModule extends ReactContextBaseJavaModule {
     private Intent mSurveyIntent;
     private Callback requestSurveyCallback;
 
+    private boolean isInitializing = false;
+
     public RNPollfishModule(ReactApplicationContext reactContext) {
         super(reactContext);
         mContext = reactContext;
@@ -102,11 +104,17 @@ public class RNPollfishModule extends ReactContextBaseJavaModule {
                     .pollfishClosedListener(new PollfishClosedListener() {
                         @Override
                         public void onPollfishClosed() {
-                            eventManager.send("surveyClosed");
+                            WritableMap map = new WritableNativeMap();
+                            map.putBoolean("wasClosedByInitialize", isInitializing);
+                            eventManager.send("surveyClosed", map);
                         }
                     })
                     .build());
-
+            if (autoMode) {
+                isInitializing = true;
+                PollFish.hide();
+                isInitializing = false;
+            }
           }
         });
 
